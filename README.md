@@ -14,11 +14,16 @@ You can download the preprocessed datasets from ，then extract them to  ' datas
 ### Train teacher model
 Train teacher model using
 ```
-python main.py -- Resume False --mode teacher --epoch 40
+python main.py -- Resume False --mode teacher --epochs epochs_number
 ```
 The trained model is saved in ' checpoints/teacher/'
 ### Train student model
-After obtaining the teacher models, train the student model using
+After obtaining the teacher models, please place the address of the saved teacher model in
 ```
-python main.py --mode student --epoch 40
+if opt.Resume:
+            path_checkpoint = ''
+```
+train the student model using
+```
+python main.py --mode student --epochs epochs_number
 ```
