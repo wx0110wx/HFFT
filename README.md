@@ -8,7 +8,7 @@ Implementation of "High-Frequency Feature Transfer for Multispectral Image Super
 * We conduct experiments on two remote sensing datasets: GaoFen-1 and GaoFen-2
 * GaoFen-1: Contains 4,761 image pairs for training and 680 samples for testing.
 * GaoFen-2: Contains 5,322 image pairs for training and 680 samples for testing.
-You can download the preprocessed datasets from ，then extract them to  ' datasets/ '
+You can download the preprocessed datasets from [here](http://www.baidu.com/)，then extract them to  ' datasets/ '
 ## Training
 
 ### Train teacher model
@@ -40,6 +40,6 @@ Evaluate the performance of the training model using
 ```
 python main.py --mode student or teacher --test
 ```
-We also provide our pretrained models on all four datasets for reference. You can download them from
+We also provide our pretrained models on all four datasets for reference. You can download them from [here](http://www.baidu.com/).
 
 
