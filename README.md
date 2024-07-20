@@ -11,13 +11,13 @@ Implementation of "High-Frequency Feature Transfer for Multispectral Image Super
 You can download the preprocessed datasets from ，then extract them to  ' datasets/ '
 ## Training
 
-### Train teacher models
+### Train teacher model
 Train teacher model using
 ```
 python main.py -- Resume False --mode teacher --epoch 40
 ```
 The trained model is saved in ' checpoints/teacher/'
-### Train teacher model
+### Train student model
 After obtaining the teacher models, train the student model using
 ```
 python main.py --mode student --epoch 40
