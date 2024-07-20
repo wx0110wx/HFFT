@@ -18,12 +18,19 @@ python main.py -- Resume False --mode teacher --epochs epochs_number
 ```
 The trained model is saved in ' checpoints/teacher/'
 ### Train student model
-After obtaining the teacher models, please place the address of the saved teacher model in
+After obtaining the teacher models, please place the address of the saved teacher model on line 103 of main.py
 ```
 if opt.Resume:
-            path_checkpoint = ''
+            path_checkpoint = './checkpoints/teacher/trained teacher model'
 ```
-train the student model using
+Then, train the student model using
 ```
 python main.py --mode student --epochs epochs_number
+```
+The trained model is saved in ' checpoints/student/'
+## Testing
+Put the address of the test model on line 55 of main.py
+Evaluate the performance of the training model using
+```
+python main.py --mode student or teacher --test
 ```
