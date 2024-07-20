@@ -33,7 +33,7 @@ Put the address of the test model on line 134 of main.py
 ```
 if opt.test:
         print("test process")
-        #加载模型参数
+        #
         model_= torch.load('./checkpoints/student or teacher model/')
 ```
 Evaluate the performance of the training model using
