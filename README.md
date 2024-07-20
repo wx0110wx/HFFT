@@ -29,8 +29,17 @@ python main.py --mode student --epochs epochs_number
 ```
 The trained model is saved in ' checpoints/student/'
 ## Testing
-Put the address of the test model on line 55 of main.py
+Put the address of the test model on line 134 of main.py
+```
+if opt.test:
+        print("test process")
+        #加载模型参数
+        model_= torch.load('./checkpoints/student or teacher model/')
+```
 Evaluate the performance of the training model using
 ```
 python main.py --mode student or teacher --test
 ```
+We also provide our pretrained models on all four datasets for reference. You can download them from
+
+
