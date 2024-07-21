@@ -40,6 +40,6 @@ Evaluate the performance of the training model using
 ```
 python main.py --mode student or teacher --test
 ```
-We also provide our pretrained models on all four datasets for reference. You can download them from [here](http://www.baidu.com/).
+We also provide our pretrained models on all four datasets for reference. You can download them from [here](https://pan.baidu.com/s/1MfUANtMWS1OvXc-8svpCgg).
 
 
